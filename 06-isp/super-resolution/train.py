@@ -88,6 +88,7 @@ def main():
         ## training
         for epoch in range(epoch_start+1, config.nr_epoch+1):
             for _ in range(train_set.minibatchs_per_epoch):
+                
                 global_cnt += 1
                 lr_images, sr_images = sess.run(train_batch_gnr)
 
@@ -127,6 +128,7 @@ def main():
                     restored_img_y = from_sub_pixel_to_img(restored_v[0][0], config.ratio)
 
                     edge = int(config.edge / 2 * config.ratio)
+                    tmp = hr_image[0, edge:-edge, edge:-edge, :1]
                     psnr_y = compare_psnr(hr_image[0, edge:-edge, edge:-edge, :1], restored_img_y)
                     psnrs.append(psnr_y)
                     

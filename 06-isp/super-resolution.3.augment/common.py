@@ -21,7 +21,7 @@ class Config:
     nr_epoch = 200
     weight_decay = 1e-10
     show_interval = 2
-    snapshot_interval = 200
+    snapshot_interval = 2
     test_interval = 1
     ratio = 3
     @property

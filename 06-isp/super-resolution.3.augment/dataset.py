@@ -23,8 +23,8 @@ class Dataset():
 
     def __init__(self, dataset_name):
 
-        test_dataset_path = ['../../dataset/Set14/image_SRF_3']
-        train_dataset_path = '../../dataset/Train91'
+        test_dataset_path = ['../../dataset/Set14', '../../dataset/Set5']
+        train_dataset_path = '../../dataset/T91'
         self.minibatch_size = config.minibatch_size
         self.ds_name = dataset_name
         self.rng = np.random
@@ -32,10 +32,10 @@ class Dataset():
         self.edge = config.edge
         self.stride = config.stride
         self.patch_size = config.patch_size
-        train_list = glob.glob(train_dataset_path + '/*.jpg')
+        train_list = glob.glob(train_dataset_path + '/*.png')
         test_list = []
         for single_test_dataset_path in test_dataset_path:
-            test_list = test_list + glob.glob(single_test_dataset_path + '/*LR.png')
+            test_list = test_list + glob.glob(single_test_dataset_path + '/*.png')
         self.dataset_meta = {
             'train': (train_list, 4992),
             'test': (test_list, len(test_list)),
@@ -61,13 +61,6 @@ class Dataset():
     def testing_minibatchs_per_epoch(self):
         return self.instances
 
-    def augmentation(self, img):
-        img = tf.image.random_flip_left_right(img)
-        img = tf.image.random_flip_up_down(img)
-        img = tf.image.random_hue(img, max_delta=0.05)
-        img = tf.image.random_contrast(img, lower=0.3, upper=1.0)
-        img = tf.image.random_brightness(img, max_delta=0.2)
-        img = tf.image.random_saturation(img, lower=0.0, upper=2.0)
         
         return img
 
@@ -76,11 +69,19 @@ class Dataset():
             idx = i % self.data_number
             img = cv2.imread(self.images[idx])
             if self.ds_name == 'test':
+                h, w = img.shape[:2]
+                new_h = h - h % self.ratio
+                new_w = w - w % self.ratio
+                img = img[0: new_h, 0: new_w, :]
+
+                sr_img = Image.fromarray(img.astype(np.uint8))
+                sr_img = sr_img.resize((w // config.ratio, h // config.ratio), Image.BICUBIC)
+                sr_img = np.array(sr_img)
+
                 img = rgb2ycbcr(img[:, :, ::-1]/255.0)
-                hr_img = rgb2ycbcr(cv2.imread(self.images[idx].split('LR')[0] + 'HR.png')[:, :, ::-1]/255.0)
-                yield img.astype(np.float32)/255.0, hr_img.astype(np.float32)/255.0
+                sr_img = rgb2ycbcr(sr_img[:, :, ::-1]/255.0)
+                yield sr_img.astype(np.float32)/255.0, img.astype(np.float32)/255.0
             elif self.ds_name == 'train':
-                img = self.augmentation(img)
                 h, w = img.shape[:2]
                 new_h = h - h % self.ratio
                 new_w = w - w % self.ratio

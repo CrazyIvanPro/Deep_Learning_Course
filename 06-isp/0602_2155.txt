@@ -1,4 +1,1 @@
-
-denoising.base.15.augment
 denoising.base.15.sgd.patch_40.weight_decay_1e-4.lr_0.001
-denoising.test

@@ -52,8 +52,8 @@ def main():
     loss = loss_reg + loss_squared
     ## train config
     global_steps = tf.Variable(0, trainable=False)
-    boundaries = [train_set.minibatchs_per_epoch*15, train_set.minibatchs_per_epoch*40]
-    values = [0.01, 0.001, 0.0001]
+    boundaries = [train_set.minibatchs_per_epoch*5, train_set.minibatchs_per_epoch*40]
+    values = [0.0001, 0.0001, 0.0001]
     lr = tf.train.piecewise_constant(global_steps, boundaries, values)
     opt = tf.train.AdamOptimizer(lr)
     # in order to update BN in every iter
@@ -88,6 +88,7 @@ def main():
         ## training
         for epoch in range(epoch_start+1, config.nr_epoch+1):
             for _ in range(train_set.minibatchs_per_epoch):
+                
                 global_cnt += 1
                 lr_images, sr_images = sess.run(train_batch_gnr)
 
@@ -127,6 +128,7 @@ def main():
                     restored_img_y = from_sub_pixel_to_img(restored_v[0][0], config.ratio)
 
                     edge = int(config.edge / 2 * config.ratio)
+                    tmp = hr_image[0, edge:-edge, edge:-edge, :1]
                     psnr_y = compare_psnr(hr_image[0, edge:-edge, edge:-edge, :1], restored_img_y)
                     psnrs.append(psnr_y)
                     

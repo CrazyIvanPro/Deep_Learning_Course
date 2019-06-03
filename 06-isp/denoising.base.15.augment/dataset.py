@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import tensorflow as tf
 import os
 import cv2
 import numpy as np
@@ -53,12 +54,7 @@ class Dataset():
         scale_h = int(h * s)
         scale_w = int(w * s)
         img = cv2.resize(img, (scale_w, scale_h), interpolation=cv2.INTER_CUBIC)
-        img = tf.image.random_flip_left_right(img)
-        img = tf.image.random_flip_up_down(img)
-        img = tf.image.random_hue(img, max_delta=0.05)
-        img = tf.image.random_contrast(img, lower=0.3, upper=1.0)
-        img = tf.image.random_brightness(img, max_delta=0.2)
-        img = tf.image.random_saturation(img, lower=0.0, upper=2.0)
+        img = cv2.flip(img, self.rng.randint(-1, 2))
         
         return img
 

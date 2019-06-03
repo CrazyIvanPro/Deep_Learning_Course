@@ -50,10 +50,10 @@ def main():
     loss = loss_reg + loss_squared
     ## train config
     global_steps = tf.Variable(0, trainable=False)
-    boundaries = [train_set.minibatchs_per_epoch*5, train_set.minibatchs_per_epoch*40]
+    boundaries = [train_set.minibatchs_per_epoch*15, train_set.minibatchs_per_epoch*80]
     values = [0.001, 0.0001, 0.00005]
     lr = tf.train.piecewise_constant(global_steps, boundaries, values)
-    opt = tf.train.MomentumOptimizer(lr, momentum=0.9)
+    opt = tf.train.AdamOptimizer(lr)
     # in order to update BN in every iter
 
     update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
