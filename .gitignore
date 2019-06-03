@@ -1,4 +1,5 @@
 */dataset/
-*/models/
+*/models
 */__pycache__/
 dataset/
+models/
