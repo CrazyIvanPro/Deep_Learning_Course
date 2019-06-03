@@ -1,0 +1,27 @@
+2019-06-03 12:42:41.930172: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-06-03 12:42:42.287228: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-03 12:42:42.292510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
+pciBusID: 0000:00:0e.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2019-06-03 12:42:42.292544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-06-03 12:42:42.657227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-06-03 12:42:42.657307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-06-03 12:42:42.657321: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-06-03 12:42:42.657768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10409 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:00:0e.0, compute capability: 6.1)
+2019-06-03 12:42:52.915808: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3079 of 4992
+2019-06-03 12:42:59.115802: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-03 12:43:11.271891: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3079 of 4992
+2019-06-03 12:43:17.497655: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-03 12:43:28.329998: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3084 of 4992
+2019-06-03 12:43:34.504010: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-03 12:43:45.295098: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3091 of 4992
+2019-06-03 12:43:51.477677: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-03 12:44:02.271651: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3088 of 4992
+2019-06-03 12:44:08.461849: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-03 12:44:19.216122: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3085 of 4992
+2019-06-03 12:44:25.310741: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-03 12:44:36.127196: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3150 of 4992
+2019-06-03 12:44:42.003667: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-03 12:44:52.767929: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3126 of 4992
+2019-06-03 12:44:58.712400: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.

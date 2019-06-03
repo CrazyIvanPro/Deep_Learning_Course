@@ -23,7 +23,7 @@ class Dataset():
 
     def __init__(self, dataset_name):
 
-        test_dataset_path = ['../../dataset/Set14', '../../dataset/Set5']
+        test_dataset_path = ['../../dataset/Set14']
         train_dataset_path = '../../dataset/T91'
         self.minibatch_size = config.minibatch_size
         self.ds_name = dataset_name

@@ -1,0 +1,4 @@
+super-resolution.3.augment
+super-resolution.3.augment.bs_16
+super-resolution.3.augment.bs_32
+super-resolution.3.augment.bs_64
