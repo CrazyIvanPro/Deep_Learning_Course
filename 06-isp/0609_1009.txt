@@ -1,0 +1,4 @@
+denoising.base.15.augment.lr_1e-3
+denoising.base.15.augment.lr_1e-3.split_20_60
+denoising.base.15.augment.lr_1e-3.split_5_40_100
+denoising.base.15.augment.split_5_40_100

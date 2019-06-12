@@ -1,0 +1,16 @@
+super-resolution.2.augment.test6
+super-resolution.4.augment.test6
+super-resolution.3.augment.test3
+super-resolution.3.augment.test4
+super-resolution.3.augment.test5
+super-resolution.3.augment.test6
+super-resolution.3.augment.test7
+demosaicing_sRGB.test1
+demosaicing_sRGB.test2
+demosaicing_sRGB.test3
+demosaicing_sRGB.test4
+demosaicing_sRGB.test5
+demosaicing_sRGB.test6
+demosaicing_linear.test1
+demosaicing_linear.test2
+demosaicing_linear.test3

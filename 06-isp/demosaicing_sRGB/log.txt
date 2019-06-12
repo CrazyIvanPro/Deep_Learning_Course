@@ -1,0 +1,2212 @@
+2019-06-12 12:09:38.360762: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-06-12 12:09:38.706445: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-12 12:09:38.710668: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
+pciBusID: 0000:00:0e.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2019-06-12 12:09:38.710715: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-06-12 12:09:39.080778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-06-12 12:09:39.080865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-06-12 12:09:39.080882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-06-12 12:09:39.081292: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10409 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:00:0e.0, compute capability: 6.1)
+2019-06-12 12:09:49.508494: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 737 of 4992
+2019-06-12 12:09:59.505756: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1514 of 4992
+2019-06-12 12:10:09.512335: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2257 of 4992
+2019-06-12 12:10:19.510138: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3031 of 4992
+2019-06-12 12:10:29.513187: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3779 of 4992
+2019-06-12 12:10:39.505245: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4542 of 4992
+2019-06-12 12:10:45.298323: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:11:02.369758: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 737 of 4992
+2019-06-12 12:11:12.374832: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1519 of 4992
+2019-06-12 12:11:22.373764: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2285 of 4992
+2019-06-12 12:11:32.785247: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:11:42.368117: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3828 of 4992
+2019-06-12 12:11:52.365300: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4571 of 4992
+2019-06-12 12:11:57.216543: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:12:12.819477: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 732 of 4992
+2019-06-12 12:12:22.831062: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1513 of 4992
+2019-06-12 12:12:32.822113: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2260 of 4992
+2019-06-12 12:12:42.815934: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3026 of 4992
+2019-06-12 12:12:52.816709: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3779 of 4992
+2019-06-12 12:13:02.822193: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4548 of 4992
+2019-06-12 12:13:08.492184: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:13:23.961969: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 739 of 4992
+2019-06-12 12:13:33.963802: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1523 of 4992
+2019-06-12 12:13:43.961368: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2284 of 4992
+2019-06-12 12:13:53.958274: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3060 of 4992
+2019-06-12 12:14:03.962804: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3822 of 4992
+2019-06-12 12:14:14.070535: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:14:19.121080: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:14:34.695884: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 743 of 4992
+2019-06-12 12:14:44.702986: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1524 of 4992
+2019-06-12 12:14:54.698871: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2286 of 4992
+2019-06-12 12:15:04.702661: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3057 of 4992
+2019-06-12 12:15:14.702310: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3824 of 4992
+2019-06-12 12:15:24.692181: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4568 of 4992
+2019-06-12 12:15:29.668807: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:15:45.126801: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 738 of 4992
+2019-06-12 12:15:55.136079: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1519 of 4992
+2019-06-12 12:16:05.131261: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2274 of 4992
+2019-06-12 12:16:15.123931: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3047 of 4992
+2019-06-12 12:16:25.128259: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3812 of 4992
+2019-06-12 12:16:35.477254: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:16:40.532497: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:16:56.123355: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 752 of 4992
+2019-06-12 12:17:06.128141: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1537 of 4992
+2019-06-12 12:17:16.120629: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2307 of 4992
+2019-06-12 12:17:26.298252: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:17:36.122833: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3861 of 4992
+2019-06-12 12:17:46.128523: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4611 of 4992
+2019-06-12 12:17:50.551390: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:18:05.997201: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 735 of 4992
+2019-06-12 12:18:16.003901: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1512 of 4992
+2019-06-12 12:18:25.990796: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2258 of 4992
+2019-06-12 12:18:35.994522: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3030 of 4992
+2019-06-12 12:18:45.993083: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3783 of 4992
+2019-06-12 12:18:55.992329: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4545 of 4992
+2019-06-12 12:19:01.722156: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:19:17.297601: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 755 of 4992
+2019-06-12 12:19:27.288653: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1545 of 4992
+2019-06-12 12:19:37.314527: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2324 of 4992
+2019-06-12 12:19:47.293377: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3078 of 4992
+2019-06-12 12:19:57.297099: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3885 of 4992
+2019-06-12 12:20:07.296850: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4632 of 4992
+2019-06-12 12:20:11.485642: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+e:1,2/39 loss: 0.848 loss_reg: 0.000 lr: 0.0000
+e:1,4/39 loss: 0.472 loss_reg: 0.000 lr: 0.0000
+e:1,6/39 loss: 0.438 loss_reg: 0.000 lr: 0.0000
+e:1,8/39 loss: 0.463 loss_reg: 0.000 lr: 0.0000
+e:1,10/39 loss: 0.398 loss_reg: 0.000 lr: 0.0000
+e:1,12/39 loss: 0.324 loss_reg: 0.000 lr: 0.0000
+e:1,14/39 loss: 0.270 loss_reg: 0.000 lr: 0.0000
+e:1,16/39 loss: 0.254 loss_reg: 0.000 lr: 0.0000
+e:1,18/39 loss: 0.230 loss_reg: 0.000 lr: 0.0000
+e:1,20/39 loss: 0.202 loss_reg: 0.000 lr: 0.0000
+e:1,22/39 loss: 0.194 loss_reg: 0.000 lr: 0.0000
+e:1,24/39 loss: 0.194 loss_reg: 0.000 lr: 0.0000
+e:1,26/39 loss: 0.173 loss_reg: 0.000 lr: 0.0000
+e:1,28/39 loss: 0.166 loss_reg: 0.000 lr: 0.0000
+e:1,30/39 loss: 0.147 loss_reg: 0.000 lr: 0.0000
+e:1,32/39 loss: 0.145 loss_reg: 0.000 lr: 0.0000
+e:1,34/39 loss: 0.134 loss_reg: 0.000 lr: 0.0000
+e:1,36/39 loss: 0.119 loss_reg: 0.000 lr: 0.0000
+e:1,38/39 loss: 0.120 loss_reg: 0.000 lr: 0.0000
+average psnr is 12.58 dB
+e:2,1/39 loss: 0.110 loss_reg: 0.000 lr: 0.0000
+e:2,3/39 loss: 0.110 loss_reg: 0.000 lr: 0.0000
+e:2,5/39 loss: 0.115 loss_reg: 0.000 lr: 0.0000
+e:2,7/39 loss: 0.094 loss_reg: 0.000 lr: 0.0000
+e:2,9/39 loss: 0.089 loss_reg: 0.000 lr: 0.0000
+e:2,11/39 loss: 0.088 loss_reg: 0.000 lr: 0.0000
+e:2,13/39 loss: 0.081 loss_reg: 0.000 lr: 0.0000
+e:2,15/39 loss: 0.080 loss_reg: 0.000 lr: 0.0000
+e:2,17/39 loss: 0.076 loss_reg: 0.000 lr: 0.0000
+e:2,19/39 loss: 0.075 loss_reg: 0.000 lr: 0.0000
+e:2,21/39 loss: 0.067 loss_reg: 0.000 lr: 0.0000
+e:2,23/39 loss: 0.072 loss_reg: 0.000 lr: 0.0000
+e:2,25/39 loss: 0.065 loss_reg: 0.000 lr: 0.0000
+e:2,27/39 loss: 0.068 loss_reg: 0.000 lr: 0.0000
+e:2,29/39 loss: 0.066 loss_reg: 0.000 lr: 0.0000
+e:2,31/39 loss: 0.060 loss_reg: 0.000 lr: 0.0000
+e:2,33/39 loss: 0.061 loss_reg: 0.000 lr: 0.0000
+e:2,35/39 loss: 0.063 loss_reg: 0.000 lr: 0.0000
+e:2,37/39 loss: 0.055 loss_reg: 0.000 lr: 0.0000
+e:2,0/39 loss: 0.051 loss_reg: 0.000 lr: 0.0000
+average psnr is 16.93 dB
+e:3,2/39 loss: 0.053 loss_reg: 0.000 lr: 0.0000
+e:3,4/39 loss: 0.051 loss_reg: 0.000 lr: 0.0000
+e:3,6/39 loss: 0.052 loss_reg: 0.000 lr: 0.0000
+e:3,8/39 loss: 0.046 loss_reg: 0.000 lr: 0.0000
+e:3,10/39 loss: 0.053 loss_reg: 0.000 lr: 0.0000
+e:3,12/39 loss: 0.043 loss_reg: 0.000 lr: 0.0000
+e:3,14/39 loss: 0.045 loss_reg: 0.000 lr: 0.0000
+e:3,16/39 loss: 0.040 loss_reg: 0.000 lr: 0.0000
+e:3,18/39 loss: 0.045 loss_reg: 0.000 lr: 0.0000
+e:3,20/39 loss: 0.036 loss_reg: 0.000 lr: 0.0000
+e:3,22/39 loss: 0.047 loss_reg: 0.000 lr: 0.0000
+e:3,24/39 loss: 0.040 loss_reg: 0.000 lr: 0.0000
+e:3,26/39 loss: 0.040 loss_reg: 0.000 lr: 0.0000
+e:3,28/39 loss: 0.035 loss_reg: 0.000 lr: 0.0000
+e:3,30/39 loss: 0.034 loss_reg: 0.000 lr: 0.0000
+e:3,32/39 loss: 0.037 loss_reg: 0.000 lr: 0.0000
+e:3,34/39 loss: 0.033 loss_reg: 0.000 lr: 0.0000
+e:3,36/39 loss: 0.035 loss_reg: 0.000 lr: 0.0000
+e:3,38/39 loss: 0.034 loss_reg: 0.000 lr: 0.0000
+average psnr is 19.48 dB
+e:4,1/39 loss: 0.036 loss_reg: 0.000 lr: 0.0000
+e:4,3/39 loss: 0.031 loss_reg: 0.000 lr: 0.0000
+e:4,5/39 loss: 0.031 loss_reg: 0.000 lr: 0.0000
+e:4,7/39 loss: 0.031 loss_reg: 0.000 lr: 0.0000
+e:4,9/39 loss: 0.031 loss_reg: 0.000 lr: 0.0000
+e:4,11/39 loss: 0.031 loss_reg: 0.000 lr: 0.0000
+e:4,13/39 loss: 0.032 loss_reg: 0.000 lr: 0.0000
+e:4,15/39 loss: 0.028 loss_reg: 0.000 lr: 0.0000
+e:4,17/39 loss: 0.031 loss_reg: 0.000 lr: 0.0000
+e:4,19/39 loss: 0.029 loss_reg: 0.000 lr: 0.0000
+e:4,21/39 loss: 0.030 loss_reg: 0.000 lr: 0.0000
+e:4,23/39 loss: 0.029 loss_reg: 0.000 lr: 0.0000
+e:4,25/39 loss: 0.027 loss_reg: 0.000 lr: 0.0000
+e:4,27/39 loss: 0.025 loss_reg: 0.000 lr: 0.0000
+e:4,29/39 loss: 0.030 loss_reg: 0.000 lr: 0.0000
+e:4,31/39 loss: 0.025 loss_reg: 0.000 lr: 0.0000
+e:4,33/39 loss: 0.024 loss_reg: 0.000 lr: 0.0000
+e:4,35/39 loss: 0.024 loss_reg: 0.000 lr: 0.0000
+e:4,37/39 loss: 0.026 loss_reg: 0.000 lr: 0.0000
+e:4,0/39 loss: 0.023 loss_reg: 0.000 lr: 0.0000
+average psnr is 21.37 dB
+e:5,2/39 loss: 0.026 loss_reg: 0.000 lr: 0.0000
+e:5,4/39 loss: 0.021 loss_reg: 0.000 lr: 0.0000
+e:5,6/39 loss: 0.024 loss_reg: 0.000 lr: 0.0000
+e:5,8/39 loss: 0.024 loss_reg: 0.000 lr: 0.0000
+e:5,10/39 loss: 0.022 loss_reg: 0.000 lr: 0.0000
+e:5,12/39 loss: 0.022 loss_reg: 0.000 lr: 0.0000
+e:5,14/39 loss: 0.022 loss_reg: 0.000 lr: 0.0000
+e:5,16/39 loss: 0.020 loss_reg: 0.000 lr: 0.0000
+e:5,18/39 loss: 0.019 loss_reg: 0.000 lr: 0.0000
+e:5,20/39 loss: 0.019 loss_reg: 0.000 lr: 0.0000
+e:5,22/39 loss: 0.021 loss_reg: 0.000 lr: 0.0000
+e:5,24/39 loss: 0.020 loss_reg: 0.000 lr: 0.0000
+e:5,26/39 loss: 0.021 loss_reg: 0.000 lr: 0.0000
+e:5,28/39 loss: 0.020 loss_reg: 0.000 lr: 0.0000
+e:5,30/39 loss: 0.022 loss_reg: 0.000 lr: 0.0000
+e:5,32/39 loss: 0.019 loss_reg: 0.000 lr: 0.0000
+e:5,34/39 loss: 0.019 loss_reg: 0.000 lr: 0.0000
+e:5,36/39 loss: 0.020 loss_reg: 0.000 lr: 0.0000
+e:5,38/39 loss: 0.020 loss_reg: 0.000 lr: 0.0000
+average psnr is 22.82 dB
+e:6,1/39 loss: 0.018 loss_reg: 0.000 lr: 0.0000
+e:6,3/39 loss: 0.017 loss_reg: 0.000 lr: 0.0000
+e:6,5/39 loss: 0.017 loss_reg: 0.000 lr: 0.0000
+e:6,7/39 loss: 0.018 loss_reg: 0.000 lr: 0.0000
+e:6,9/39 loss: 0.017 loss_reg: 0.000 lr: 0.0000
+e:6,11/39 loss: 0.019 loss_reg: 0.000 lr: 0.0000
+e:6,13/39 loss: 0.018 loss_reg: 0.000 lr: 0.0000
+e:6,15/39 loss: 0.018 loss_reg: 0.000 lr: 0.0000
+e:6,17/39 loss: 0.017 loss_reg: 0.000 lr: 0.0000
+e:6,19/39 loss: 0.017 loss_reg: 0.000 lr: 0.0000
+e:6,21/39 loss: 0.016 loss_reg: 0.000 lr: 0.0000
+e:6,23/39 loss: 0.017 loss_reg: 0.000 lr: 0.0000
+e:6,25/39 loss: 0.016 loss_reg: 0.000 lr: 0.0000
+e:6,27/39 loss: 0.017 loss_reg: 0.000 lr: 0.0000
+e:6,29/39 loss: 0.017 loss_reg: 0.000 lr: 0.0000
+e:6,31/39 loss: 0.016 loss_reg: 0.000 lr: 0.0000
+e:6,33/39 loss: 0.016 loss_reg: 0.000 lr: 0.0000
+e:6,35/39 loss: 0.018 loss_reg: 0.000 lr: 0.0000
+e:6,37/39 loss: 0.016 loss_reg: 0.000 lr: 0.0000
+e:6,0/39 loss: 0.015 loss_reg: 0.000 lr: 0.0000
+average psnr is 23.83 dB
+e:7,2/39 loss: 0.015 loss_reg: 0.000 lr: 0.0000
+e:7,4/39 loss: 0.016 loss_reg: 0.000 lr: 0.0000
+e:7,6/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:7,8/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:7,10/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:7,12/39 loss: 0.015 loss_reg: 0.000 lr: 0.0000
+e:7,14/39 loss: 0.016 loss_reg: 0.000 lr: 0.0000
+e:7,16/39 loss: 0.016 loss_reg: 0.000 lr: 0.0000
+e:7,18/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:7,20/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:7,22/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:7,24/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:7,26/39 loss: 0.015 loss_reg: 0.000 lr: 0.0000
+e:7,28/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:7,30/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:7,32/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:7,34/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:7,36/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:7,38/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+average psnr is 24.82 dB
+e:8,1/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:8,3/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:8,5/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:8,7/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:8,9/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:8,11/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:8,13/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:8,15/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:8,17/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:8,19/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:8,21/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:8,23/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:8,25/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:8,27/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:8,29/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:8,31/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:8,33/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:8,35/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:8,37/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:8,0/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+average psnr is 25.51 dB
+e:9,2/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:9,4/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:9,6/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:9,8/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:9,10/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:9,12/39 loss: 0.013 loss_reg: 0.000 lr: 0.0000
+e:9,14/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:9,16/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:9,18/392019-06-12 12:20:26.905008: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 746 of 4992
+2019-06-12 12:20:36.911579: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1535 of 4992
+2019-06-12 12:20:46.911624: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2309 of 4992
+2019-06-12 12:20:57.090940: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:21:06.912994: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3849 of 4992
+2019-06-12 12:21:16.910643: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4599 of 4992
+2019-06-12 12:21:21.453220: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:21:37.017417: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 756 of 4992
+2019-06-12 12:21:47.021756: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1535 of 4992
+2019-06-12 12:21:57.022798: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2284 of 4992
+2019-06-12 12:22:07.015044: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3048 of 4992
+2019-06-12 12:22:17.024301: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3798 of 4992
+2019-06-12 12:22:27.416132: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:22:32.341310: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:22:47.787938: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 751 of 4992
+2019-06-12 12:22:57.783546: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1535 of 4992
+2019-06-12 12:23:07.783755: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2306 of 4992
+2019-06-12 12:23:18.007613: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:23:27.797316: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3859 of 4992
+2019-06-12 12:23:37.788499: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4608 of 4992
+2019-06-12 12:23:42.238287: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:23:57.796108: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 733 of 4992
+2019-06-12 12:24:07.792573: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1516 of 4992
+2019-06-12 12:24:17.794780: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2268 of 4992
+2019-06-12 12:24:27.795310: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3038 of 4992
+2019-06-12 12:24:37.797263: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3794 of 4992
+2019-06-12 12:24:47.792389: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4563 of 4992
+2019-06-12 12:24:53.125723: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:25:08.562301: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 732 of 4992
+2019-06-12 12:25:18.569092: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1515 of 4992
+2019-06-12 12:25:28.559322: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2269 of 4992
+2019-06-12 12:25:38.564815: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3041 of 4992
+2019-06-12 12:25:48.561376: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3798 of 4992
+2019-06-12 12:25:58.867455: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:26:03.854002: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:26:19.427353: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 743 of 4992
+2019-06-12 12:26:29.429714: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1526 of 4992
+2019-06-12 12:26:39.423420: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2293 of 4992
+2019-06-12 12:26:49.732767: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:26:59.426696: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3846 of 4992
+2019-06-12 12:27:09.423810: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4597 of 4992
+2019-06-12 12:27:14.013291: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:27:29.403033: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 759 of 4992
+2019-06-12 12:27:39.404374: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1546 of 4992
+2019-06-12 12:27:49.407708: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2322 of 4992
+2019-06-12 12:27:59.407336: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3068 of 4992
+2019-06-12 12:28:09.404968: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3872 of 4992
+2019-06-12 12:28:19.401576: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4603 of 4992
+2019-06-12 12:28:24.000216: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:28:39.535524: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 742 of 4992
+2019-06-12 12:28:49.532031: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1533 of 4992
+2019-06-12 12:28:59.536715: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2308 of 4992
+2019-06-12 12:29:09.648509: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:29:19.547465: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3866 of 4992
+2019-06-12 12:29:29.535792: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4621 of 4992
+2019-06-12 12:29:33.822539: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+ loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:9,20/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:9,22/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:9,24/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:9,26/39 loss: 0.014 loss_reg: 0.000 lr: 0.0000
+e:9,28/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:9,30/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:9,32/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:9,34/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:9,36/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:9,38/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+average psnr is 26.14 dB
+e:10,1/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,3/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:10,5/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:10,7/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,9/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:10,11/39 loss: 0.012 loss_reg: 0.000 lr: 0.0000
+e:10,13/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:10,15/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,17/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:10,19/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,21/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,23/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,25/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,27/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,29/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,31/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,33/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:10,35/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:10,37/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:10,0/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+average psnr is 26.78 dB
+e:11,2/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:11,4/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:11,6/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:11,8/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:11,10/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:11,12/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:11,14/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:11,16/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:11,18/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:11,20/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:11,22/39 loss: 0.011 loss_reg: 0.000 lr: 0.0000
+e:11,24/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:11,26/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:11,28/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:11,30/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:11,32/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:11,34/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:11,36/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:11,38/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+average psnr is 27.15 dB
+e:12,1/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:12,3/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:12,5/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:12,7/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:12,9/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:12,11/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:12,13/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:12,15/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:12,17/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:12,19/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:12,21/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:12,23/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:12,25/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:12,27/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:12,29/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:12,31/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:12,33/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:12,35/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:12,37/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:12,0/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+average psnr is 27.62 dB
+e:13,2/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:13,4/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:13,6/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:13,8/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:13,10/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:13,12/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:13,14/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:13,16/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:13,18/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:13,20/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:13,22/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:13,24/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:13,26/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:13,28/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:13,30/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:13,32/39 loss: 0.010 loss_reg: 0.000 lr: 0.0000
+e:13,34/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:13,36/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:13,38/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+average psnr is 27.85 dB
+e:14,1/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:14,3/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:14,5/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:14,7/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:14,9/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:14,11/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:14,13/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:14,15/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:14,17/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:14,19/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:14,21/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:14,23/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:14,25/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:14,27/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:14,29/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:14,31/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:14,33/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:14,35/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:14,37/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:14,0/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+average psnr is 28.22 dB
+e:15,2/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:15,4/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:15,6/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:15,8/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:15,10/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:15,12/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:15,14/39 loss: 0.009 loss_reg: 0.000 lr: 0.0000
+e:15,16/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:15,18/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:15,20/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:15,22/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:15,24/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:15,26/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:15,28/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:15,30/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:15,32/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:15,34/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:15,36/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:15,38/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+average psnr is 28.49 dB
+e:16,1/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:16,3/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:16,5/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,7/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,9/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:16,11/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,13/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,15/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,17/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,19/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,21/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:16,23/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,25/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,27/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,29/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,31/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,33/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,35/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:16,37/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:16,0/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+average psnr is 28.73 dB
+e:17,2/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,4/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:17,6/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,8/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,10/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,12/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:17,14/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,16/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:17,18/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,20/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:17,22/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,24/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:17,26/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,28/392019-06-12 12:29:49.238932: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 735 of 4992
+2019-06-12 12:29:59.246170: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1517 of 4992
+2019-06-12 12:30:09.248388: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2264 of 4992
+2019-06-12 12:30:19.245296: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3033 of 4992
+2019-06-12 12:30:29.243572: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3801 of 4992
+2019-06-12 12:30:39.390161: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:30:44.272573: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:30:59.853786: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 750 of 4992
+2019-06-12 12:31:09.843884: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1525 of 4992
+2019-06-12 12:31:19.851272: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2278 of 4992
+2019-06-12 12:31:29.856782: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3043 of 4992
+2019-06-12 12:31:39.854266: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3801 of 4992
+2019-06-12 12:31:50.263374: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:31:55.279124: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:32:10.698889: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 739 of 4992
+2019-06-12 12:32:20.698464: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1520 of 4992
+2019-06-12 12:32:30.692690: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2277 of 4992
+2019-06-12 12:32:40.694394: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3050 of 4992
+2019-06-12 12:32:50.695076: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3818 of 4992
+2019-06-12 12:33:00.739529: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:33:05.620710: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:33:21.174521: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 747 of 4992
+2019-06-12 12:33:31.177804: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1538 of 4992
+2019-06-12 12:33:41.173593: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2308 of 4992
+2019-06-12 12:33:51.430621: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:34:01.182961: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3853 of 4992
+2019-06-12 12:34:11.181388: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4600 of 4992
+2019-06-12 12:34:15.671439: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:34:31.112228: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 739 of 4992
+2019-06-12 12:34:41.112899: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1520 of 4992
+2019-06-12 12:34:51.110490: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2259 of 4992
+2019-06-12 12:35:01.114492: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3024 of 4992
+2019-06-12 12:35:11.108126: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3768 of 4992
+2019-06-12 12:35:21.112958: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4536 of 4992
+2019-06-12 12:35:26.946893: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:35:42.535022: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 757 of 4992
+2019-06-12 12:35:52.535804: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1544 of 4992
+2019-06-12 12:36:02.536512: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2318 of 4992
+2019-06-12 12:36:12.532446: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:36:22.536620: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3875 of 4992
+2019-06-12 12:36:32.529198: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4626 of 4992
+2019-06-12 12:36:36.789287: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:36:52.258580: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 729 of 4992
+2019-06-12 12:37:02.252227: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1507 of 4992
+2019-06-12 12:37:12.248397: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2245 of 4992
+2019-06-12 12:37:22.255317: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3017 of 4992
+2019-06-12 12:37:32.253872: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3758 of 4992
+2019-06-12 12:37:42.247445: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4537 of 4992
+2019-06-12 12:37:48.090546: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:38:03.655142: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 729 of 4992
+2019-06-12 12:38:13.645497: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1508 of 4992
+2019-06-12 12:38:23.643182: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2247 of 4992
+2019-06-12 12:38:33.642245: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3015 of 4992
+2019-06-12 12:38:43.641074: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3780 of 4992
+2019-06-12 12:38:53.642999: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4563 of 4992
+2019-06-12 12:38:59.067346: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+ loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,30/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,32/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,34/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:17,36/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:17,38/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+average psnr is 28.94 dB
+e:18,1/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,3/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:18,5/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:18,7/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:18,9/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,11/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,13/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:18,15/39 loss: 0.008 loss_reg: 0.000 lr: 0.0000
+e:18,17/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,19/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,21/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:18,23/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,25/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,27/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,29/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,31/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,33/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:18,35/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,37/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:18,0/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+average psnr is 29.23 dB
+e:19,2/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,4/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,6/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:19,8/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:19,10/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,12/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,14/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,16/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,18/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:19,20/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,22/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,24/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:19,26/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,28/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,30/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:19,32/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,34/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:19,36/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:19,38/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+average psnr is 29.41 dB
+e:20,1/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,3/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,5/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:20,7/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,9/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,11/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,13/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,15/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,17/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:20,19/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,21/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,23/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,25/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:20,27/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:20,29/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,31/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,33/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,35/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,37/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:20,0/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+average psnr is 29.48 dB
+e:21,2/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,4/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,6/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,8/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,10/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,12/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,14/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,16/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,18/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,20/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,22/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,24/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:21,26/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,28/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:21,30/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:21,32/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:21,34/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:21,36/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:21,38/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+average psnr is 29.70 dB
+e:22,1/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,3/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:22,5/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,7/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:22,9/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:22,11/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,13/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,15/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:22,17/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,19/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,21/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,23/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,25/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,27/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,29/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,31/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:22,33/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,35/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:22,37/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:22,0/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+average psnr is 29.79 dB
+e:23,2/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,4/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:23,6/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,8/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:23,10/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:23,12/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,14/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,16/39 loss: 0.007 loss_reg: 0.000 lr: 0.0000
+e:23,18/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,20/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,22/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,24/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,26/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,28/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,30/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,32/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,34/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:23,36/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:23,38/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+average psnr is 29.96 dB
+e:24,1/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,3/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,5/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:24,7/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:24,9/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,11/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:24,13/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,15/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,17/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,19/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,21/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,23/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:24,27/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,29/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,31/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,33/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,35/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:24,37/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:24,0/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.05 dB
+e:25,2/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:25,4/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:25,6/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:25,8/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:25,10/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:25,12/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:25,14/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:25,16/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:25,18/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:25,20/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:25,22/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:25,24/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:25,26/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:25,28/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:25,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:25,32/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:25,34/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:25,36/39 loss: 0.005 loss_reg: 0.000 lr: 0.00002019-06-12 12:39:14.501231: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 751 of 4992
+2019-06-12 12:39:24.498342: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1528 of 4992
+2019-06-12 12:39:34.493704: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2295 of 4992
+2019-06-12 12:39:44.821473: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:39:54.494711: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3847 of 4992
+2019-06-12 12:40:04.493260: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4596 of 4992
+2019-06-12 12:40:09.112601: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:40:24.629179: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 743 of 4992
+2019-06-12 12:40:34.635092: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1527 of 4992
+2019-06-12 12:40:44.643481: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2285 of 4992
+2019-06-12 12:40:54.637289: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3064 of 4992
+2019-06-12 12:41:04.637588: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3828 of 4992
+2019-06-12 12:41:14.635259: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4584 of 4992
+2019-06-12 12:41:19.328008: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:41:34.741787: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 745 of 4992
+2019-06-12 12:41:44.735388: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1525 of 4992
+2019-06-12 12:41:54.739931: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2287 of 4992
+2019-06-12 12:42:04.745646: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3062 of 4992
+2019-06-12 12:42:14.758332: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3824 of 4992
+2019-06-12 12:42:24.783980: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:42:29.786517: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:42:45.320607: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 746 of 4992
+2019-06-12 12:42:55.320553: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1526 of 4992
+2019-06-12 12:43:05.330191: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2285 of 4992
+2019-06-12 12:43:15.324707: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3053 of 4992
+2019-06-12 12:43:25.316724: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3810 of 4992
+2019-06-12 12:43:35.621586: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:43:40.642511: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:43:56.091570: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 732 of 4992
+2019-06-12 12:44:06.092225: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1510 of 4992
+2019-06-12 12:44:16.088757: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2251 of 4992
+2019-06-12 12:44:26.095758: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3019 of 4992
+2019-06-12 12:44:36.098596: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3766 of 4992
+2019-06-12 12:44:46.114809: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4539 of 4992
+2019-06-12 12:44:51.878185: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:45:07.412841: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 743 of 4992
+2019-06-12 12:45:17.415591: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1528 of 4992
+2019-06-12 12:45:27.413623: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2297 of 4992
+2019-06-12 12:45:37.650194: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:45:47.420531: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3851 of 4992
+2019-06-12 12:45:57.411128: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4604 of 4992
+2019-06-12 12:46:01.872814: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:46:17.305851: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 752 of 4992
+2019-06-12 12:46:27.305595: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1536 of 4992
+2019-06-12 12:46:37.313744: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2310 of 4992
+2019-06-12 12:46:47.436152: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:46:57.307656: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3861 of 4992
+2019-06-12 12:47:07.304097: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4590 of 4992
+2019-06-12 12:47:12.069783: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:47:27.606720: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 744 of 4992
+2019-06-12 12:47:37.625682: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1523 of 4992
+2019-06-12 12:47:47.609378: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2276 of 4992
+2019-06-12 12:47:57.603004: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3045 of 4992
+2019-06-12 12:48:07.603255: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3803 of 4992
+2019-06-12 12:48:17.979805: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:48:22.982690: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:48:38.385455: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 740 of 4992
+2019-06-12 12:48:48.403580: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1523 of 4992
+2019-06-12 12:48:58.383242: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2278 of 4992
+2019-06-12 12:49:08.797500: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:49:18.379737: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3839 of 4992
+2019-06-12 12:49:28.376877: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4588 of 4992
+2019-06-12 12:49:33.042428: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+
+e:25,38/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.18 dB
+e:26,1/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:26,3/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:26,5/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:26,7/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:26,9/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,11/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,13/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,15/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,17/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,19/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:26,21/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:26,23/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:26,27/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,29/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,31/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,33/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,35/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,37/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:26,0/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.24 dB
+e:27,2/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,4/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:27,6/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:27,8/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,10/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,12/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,14/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:27,16/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:27,18/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,20/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,22/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,24/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:27,26/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,28/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,30/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,32/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:27,34/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,36/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:27,38/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.41 dB
+e:28,1/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:28,3/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,5/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,7/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,9/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:28,11/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:28,13/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,15/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,17/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,19/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:28,21/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:28,23/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,27/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,29/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,31/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,33/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,35/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,37/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:28,0/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.47 dB
+e:29,2/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,4/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,6/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:29,8/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,10/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,12/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,14/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,16/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,18/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,20/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,22/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,24/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:29,28/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:29,30/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,32/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,34/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,36/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:29,38/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.57 dB
+e:30,1/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,3/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:30,5/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,7/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,9/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:30,13/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,15/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,17/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,19/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:30,21/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:30,23/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,27/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,29/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,31/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,33/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,35/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:30,37/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:30,0/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.65 dB
+e:31,2/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,4/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,6/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,8/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:31,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:31,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:31,16/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,18/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,20/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:31,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:31,24/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,26/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,28/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,30/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,32/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:31,34/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,36/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:31,38/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.76 dB
+e:32,1/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:32,3/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,5/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,7/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:32,9/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,11/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,13/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,15/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,17/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,19/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,21/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,23/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,27/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:32,29/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:32,33/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,35/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,37/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:32,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.77 dB
+e:33,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:33,4/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,6/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,8/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,10/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,12/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,14/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,16/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,18/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,20/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,22/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,24/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,26/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,28/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,30/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,32/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,34/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,36/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:33,38/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.84 dB
+e:34,1/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:34,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:34,5/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:34,7/39 2019-06-12 12:49:48.630741: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 730 of 4992
+2019-06-12 12:49:58.637740: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1509 of 4992
+2019-06-12 12:50:08.631377: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2273 of 4992
+2019-06-12 12:50:18.624673: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3045 of 4992
+2019-06-12 12:50:28.623772: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3805 of 4992
+2019-06-12 12:50:38.907936: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:50:43.873090: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:50:59.318324: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 742 of 4992
+2019-06-12 12:51:09.307496: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1528 of 4992
+2019-06-12 12:51:19.308445: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2286 of 4992
+2019-06-12 12:51:29.316551: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3053 of 4992
+2019-06-12 12:51:39.309169: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3821 of 4992
+2019-06-12 12:51:49.317811: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4571 of 4992
+2019-06-12 12:51:54.167292: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:52:09.710356: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 757 of 4992
+2019-06-12 12:52:19.731045: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1533 of 4992
+2019-06-12 12:52:29.710095: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2296 of 4992
+2019-06-12 12:52:39.994028: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:52:49.719320: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3844 of 4992
+2019-06-12 12:52:59.712630: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4594 of 4992
+2019-06-12 12:53:04.283185: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:53:19.707103: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 739 of 4992
+2019-06-12 12:53:29.709232: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1519 of 4992
+2019-06-12 12:53:39.718060: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2273 of 4992
+2019-06-12 12:53:49.707291: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3047 of 4992
+2019-06-12 12:53:59.713081: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3802 of 4992
+2019-06-12 12:54:10.022342: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:54:14.997816: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:54:30.544586: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 743 of 4992
+2019-06-12 12:54:40.555258: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1534 of 4992
+2019-06-12 12:54:50.550875: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2294 of 4992
+2019-06-12 12:55:00.924947: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:55:10.548748: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3836 of 4992
+2019-06-12 12:55:20.553565: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4574 of 4992
+2019-06-12 12:55:25.452931: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:55:40.836407: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 753 of 4992
+2019-06-12 12:55:50.839738: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1539 of 4992
+2019-06-12 12:56:00.838489: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2311 of 4992
+2019-06-12 12:56:11.207430: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:56:20.855398: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3816 of 4992
+2019-06-12 12:56:31.183610: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:56:36.194135: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:56:51.727951: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 740 of 4992
+2019-06-12 12:57:01.736046: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1523 of 4992
+2019-06-12 12:57:11.727998: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2277 of 4992
+2019-06-12 12:57:21.728045: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3051 of 4992
+2019-06-12 12:57:31.726776: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3815 of 4992
+2019-06-12 12:57:41.822491: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 12:57:46.796444: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 12:58:02.189371: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 747 of 4992
+2019-06-12 12:58:12.190439: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1528 of 4992
+2019-06-12 12:58:22.191299: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2290 of 4992
+2019-06-12 12:58:32.601042: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:58:42.191341: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3836 of 4992
+2019-06-12 12:58:52.191504: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4588 of 4992
+2019-06-12 12:58:56.849158: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:34,9/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:34,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:34,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:34,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:34,17/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:34,19/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:34,21/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:34,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:34,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:34,27/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:34,29/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:34,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:34,33/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:34,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:34,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:34,0/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 30.95 dB
+e:35,2/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,4/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,6/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,8/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,10/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,12/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,14/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,16/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,18/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:35,20/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,22/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:35,26/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,28/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:35,30/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,32/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:35,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:35,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:35,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.01 dB
+e:36,1/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:36,5/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:36,9/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:36,13/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,15/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,17/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,19/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,21/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:36,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,27/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,29/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,31/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,33/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,35/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,37/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:36,0/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.04 dB
+e:37,2/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,4/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,6/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:37,10/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,12/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:37,14/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,16/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,18/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:37,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:37,24/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:37,28/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,30/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,32/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:37,36/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:37,38/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.12 dB
+e:38,1/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,3/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,5/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,7/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,9/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:38,11/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,13/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:38,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:38,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:38,21/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,23/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,27/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:38,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:38,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:38,35/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:38,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:38,0/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.13 dB
+e:39,2/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:39,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,14/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:39,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,18/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:39,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,24/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:39,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,28/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:39,30/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:39,32/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:39,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:39,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.22 dB
+e:40,1/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:40,5/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,7/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:40,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:40,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:40,15/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:40,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:40,21/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,23/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:40,29/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,31/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,33/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,35/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:40,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:40,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.31 dB
+e:41,2/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:41,4/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:41,6/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:41,8/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:41,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,16/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:41,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:41,36/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:41,38/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.32 dB
+e:42,1/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:42,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:42,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:42,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:42,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:42,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:42,13/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:42,15/39 loss: 0.005 loss_reg: 0.000 lr: 0.00002019-06-12 12:59:12.418614: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 751 of 4992
+2019-06-12 12:59:22.423977: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1538 of 4992
+2019-06-12 12:59:32.415782: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2300 of 4992
+2019-06-12 12:59:42.713231: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 12:59:52.412105: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3845 of 4992
+2019-06-12 13:00:02.420825: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4591 of 4992
+2019-06-12 13:00:07.071793: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:00:22.480689: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 735 of 4992
+2019-06-12 13:00:32.492907: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1525 of 4992
+2019-06-12 13:00:42.492000: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2291 of 4992
+2019-06-12 13:00:52.765642: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:01:02.486740: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3853 of 4992
+2019-06-12 13:01:12.484825: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4604 of 4992
+2019-06-12 13:01:16.998695: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:01:32.551786: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 736 of 4992
+2019-06-12 13:01:42.553732: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1513 of 4992
+2019-06-12 13:01:52.560301: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2260 of 4992
+2019-06-12 13:02:02.555295: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3030 of 4992
+2019-06-12 13:02:12.552194: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3777 of 4992
+2019-06-12 13:02:22.549803: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4545 of 4992
+2019-06-12 13:02:28.235401: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:02:43.683754: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 735 of 4992
+2019-06-12 13:02:53.679172: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1510 of 4992
+2019-06-12 13:03:03.684651: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2257 of 4992
+2019-06-12 13:03:13.676751: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3031 of 4992
+2019-06-12 13:03:23.680909: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3777 of 4992
+2019-06-12 13:03:33.678389: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4541 of 4992
+2019-06-12 13:03:39.400552: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:03:54.972447: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 742 of 4992
+2019-06-12 13:04:04.972642: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1524 of 4992
+2019-06-12 13:04:14.973194: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2283 of 4992
+2019-06-12 13:04:24.976078: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3057 of 4992
+2019-06-12 13:04:34.972924: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3821 of 4992
+2019-06-12 13:04:45.113806: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:04:50.103481: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:05:05.582393: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 738 of 4992
+2019-06-12 13:05:15.597468: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1523 of 4992
+2019-06-12 13:05:25.580992: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2284 of 4992
+2019-06-12 13:05:35.571461: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3062 of 4992
+2019-06-12 13:05:45.581409: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3824 of 4992
+2019-06-12 13:05:55.586328: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:06:00.597636: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:06:16.200438: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 741 of 4992
+2019-06-12 13:06:26.202277: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1514 of 4992
+2019-06-12 13:06:36.201643: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2262 of 4992
+2019-06-12 13:06:46.200861: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3036 of 4992
+2019-06-12 13:06:56.202884: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3799 of 4992
+2019-06-12 13:07:06.203884: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4563 of 4992
+2019-06-12 13:07:11.686619: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:07:27.140772: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 733 of 4992
+2019-06-12 13:07:37.157782: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1513 of 4992
+2019-06-12 13:07:47.136748: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2255 of 4992
+2019-06-12 13:07:57.142937: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3024 of 4992
+2019-06-12 13:08:07.150143: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3768 of 4992
+2019-06-12 13:08:17.148825: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4535 of 4992
+2019-06-12 13:08:23.010687: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+
+e:42,17/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:42,19/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:42,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:42,23/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:42,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:42,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:42,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:42,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:42,33/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:42,35/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:42,37/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:42,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.38 dB
+e:43,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,4/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:43,6/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:43,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,14/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:43,16/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:43,18/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:43,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,28/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:43,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:43,36/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:43,38/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.44 dB
+e:44,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,3/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:44,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,17/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:44,19/39 loss: 0.006 loss_reg: 0.000 lr: 0.0000
+e:44,21/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:44,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,29/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:44,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,33/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:44,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:44,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.48 dB
+e:45,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,4/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:45,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,12/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:45,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,34/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:45,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:45,38/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.55 dB
+e:46,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,13/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:46,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,21/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:46,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,33/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:46,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:46,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.58 dB
+e:47,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:47,4/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:47,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:47,8/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:47,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:47,12/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:47,14/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:47,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:47,18/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:47,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:47,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:47,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:47,26/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:47,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:47,30/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:47,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:47,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:47,36/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:47,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.63 dB
+e:48,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,5/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:48,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,19/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:48,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:48,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,29/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:48,31/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:48,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:48,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.61 dB
+e:49,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,10/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:49,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,20/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:49,22/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:49,24/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:49,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:49,38/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.71 dB
+e:50,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,13/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:50,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,25/39 loss: 0.004 loss_reg: 0.0002019-06-12 13:08:38.573123: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 755 of 4992
+2019-06-12 13:08:48.580061: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1538 of 4992
+2019-06-12 13:08:58.577219: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2313 of 4992
+2019-06-12 13:09:08.645098: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:09:18.572083: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3859 of 4992
+2019-06-12 13:09:28.571577: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4609 of 4992
+2019-06-12 13:09:32.965887: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:09:48.418891: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 746 of 4992
+2019-06-12 13:09:58.425283: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1530 of 4992
+2019-06-12 13:10:08.421890: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2299 of 4992
+2019-06-12 13:10:18.614072: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:10:28.414764: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3855 of 4992
+2019-06-12 13:10:38.414632: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4599 of 4992
+2019-06-12 13:10:42.953629: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:10:58.515258: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 754 of 4992
+2019-06-12 13:11:08.513849: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1534 of 4992
+2019-06-12 13:11:18.515163: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2295 of 4992
+2019-06-12 13:11:28.873575: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:11:38.510585: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3837 of 4992
+2019-06-12 13:11:48.513356: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4575 of 4992
+2019-06-12 13:11:53.377003: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:12:08.790898: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 740 of 4992
+2019-06-12 13:12:18.797659: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1533 of 4992
+2019-06-12 13:12:28.790279: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2309 of 4992
+2019-06-12 13:12:38.855307: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:12:48.801590: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3859 of 4992
+2019-06-12 13:12:58.789119: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4592 of 4992
+2019-06-12 13:13:03.537125: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:13:19.139627: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 732 of 4992
+2019-06-12 13:13:29.139130: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1515 of 4992
+2019-06-12 13:13:39.147410: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2265 of 4992
+2019-06-12 13:13:49.149099: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3035 of 4992
+2019-06-12 13:13:59.149105: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3787 of 4992
+2019-06-12 13:14:09.561411: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:14:14.506164: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:14:29.996443: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 735 of 4992
+2019-06-12 13:14:39.999636: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1515 of 4992
+2019-06-12 13:14:49.995357: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2262 of 4992
+2019-06-12 13:14:59.992114: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3036 of 4992
+2019-06-12 13:15:09.997453: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3802 of 4992
+2019-06-12 13:15:20.321271: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:15:25.281171: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:15:40.842998: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 736 of 4992
+2019-06-12 13:15:50.835927: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1514 of 4992
+2019-06-12 13:16:00.846031: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2267 of 4992
+2019-06-12 13:16:10.854027: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3043 of 4992
+2019-06-12 13:16:20.844798: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3798 of 4992
+2019-06-12 13:16:31.193433: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:16:36.201391: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:16:51.629725: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 737 of 4992
+2019-06-12 13:17:01.624799: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1524 of 4992
+2019-06-12 13:17:11.631143: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2290 of 4992
+2019-06-12 13:17:22.007635: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:17:31.623626: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3841 of 4992
+2019-06-12 13:17:41.620633: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4585 of 4992
+2019-06-12 13:17:46.345954: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+ lr: 0.0000
+e:50,27/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:50,29/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:50,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:50,0/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.68 dB
+e:51,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,12/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:51,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,20/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:51,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,26/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:51,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:51,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.75 dB
+e:52,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,11/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:52,13/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:52,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,19/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:52,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:52,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,35/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:52,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:52,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.83 dB
+e:53,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,22/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:53,24/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:53,26/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:53,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:53,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.84 dB
+e:54,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,3/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:54,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,15/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:54,17/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:54,19/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:54,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,29/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:54,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:54,37/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:54,0/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.86 dB
+e:55,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,14/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:55,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,22/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:55,24/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:55,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:55,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.89 dB
+e:56,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,17/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:56,19/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:56,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,31/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:56,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:56,37/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:56,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.93 dB
+e:57,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,16/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:57,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,22/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:57,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,26/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:57,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:57,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 31.94 dB
+e:58,1/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:58,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,9/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:58,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,19/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:58,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,25/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:58,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,35/39 loss: 0.0042019-06-12 13:18:01.979566: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 741 of 4992
+2019-06-12 13:18:11.981717: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1524 of 4992
+2019-06-12 13:18:21.982996: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2280 of 4992
+2019-06-12 13:18:31.979747: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3053 of 4992
+2019-06-12 13:18:41.985967: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3819 of 4992
+2019-06-12 13:18:52.037479: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:18:57.017913: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:19:12.437883: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 740 of 4992
+2019-06-12 13:19:22.444686: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1523 of 4992
+2019-06-12 13:19:32.444027: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2283 of 4992
+2019-06-12 13:19:42.436807: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3048 of 4992
+2019-06-12 13:19:52.438835: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3811 of 4992
+2019-06-12 13:20:02.706112: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:20:07.685852: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:20:23.227833: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 739 of 4992
+2019-06-12 13:20:33.236748: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1522 of 4992
+2019-06-12 13:20:43.230432: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2283 of 4992
+2019-06-12 13:20:53.222859: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3055 of 4992
+2019-06-12 13:21:03.225276: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3814 of 4992
+2019-06-12 13:21:13.477092: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:21:18.489751: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:21:33.942496: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 751 of 4992
+2019-06-12 13:21:43.944375: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1533 of 4992
+2019-06-12 13:21:53.944924: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2304 of 4992
+2019-06-12 13:22:04.181835: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:22:13.944155: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3845 of 4992
+2019-06-12 13:22:23.940919: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4592 of 4992
+2019-06-12 13:22:28.614820: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:22:44.191794: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 756 of 4992
+2019-06-12 13:22:54.198923: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1543 of 4992
+2019-06-12 13:23:04.202984: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2310 of 4992
+2019-06-12 13:23:14.583757: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:23:24.193655: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3843 of 4992
+2019-06-12 13:23:34.194064: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4593 of 4992
+2019-06-12 13:23:38.795296: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:23:54.249689: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 737 of 4992
+2019-06-12 13:24:04.254095: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1513 of 4992
+2019-06-12 13:24:14.251512: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2247 of 4992
+2019-06-12 13:24:24.247345: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3013 of 4992
+2019-06-12 13:24:34.247703: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3751 of 4992
+2019-06-12 13:24:44.249747: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4531 of 4992
+2019-06-12 13:24:50.089070: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:25:05.661324: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 740 of 4992
+2019-06-12 13:25:15.664258: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1526 of 4992
+2019-06-12 13:25:25.663927: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2288 of 4992
+2019-06-12 13:25:35.665642: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3056 of 4992
+2019-06-12 13:25:45.666645: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3814 of 4992
+2019-06-12 13:25:55.873795: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:26:00.813900: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:26:16.233869: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 736 of 4992
+2019-06-12 13:26:26.251066: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1522 of 4992
+2019-06-12 13:26:36.235557: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2295 of 4992
+2019-06-12 13:26:46.461600: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:26:56.237758: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3857 of 4992
+2019-06-12 13:27:06.235997: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4605 of 4992
+2019-06-12 13:27:10.685747: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:27:26.252798: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 756 of 4992
+2019-06-12 13:27:36.248841: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1541 of 4992
+2019-06-12 13:27:46.258508: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2316 of 4992
+2019-06-12 13:27:56.304880: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:28:06.249630: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3871 of 4992
+2019-06-12 13:28:16.245149: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4624 of 4992
+2019-06-12 13:28:20.457139: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+ loss_reg: 0.000 lr: 0.0000
+e:58,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:58,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.02 dB
+e:59,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,6/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:59,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,22/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:59,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,26/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:59,28/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:59,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:59,34/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:59,36/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:59,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.01 dB
+e:60,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,17/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:60,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:60,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.05 dB
+e:61,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,10/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:61,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,16/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:61,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:61,38/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.08 dB
+e:62,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,3/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:62,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:62,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.11 dB
+e:63,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,6/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:63,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,26/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:63,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,32/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:63,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:63,36/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:63,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.14 dB
+e:64,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:64,3/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:64,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:64,7/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:64,9/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:64,11/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:64,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:64,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:64,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:64,19/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:64,21/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:64,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:64,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:64,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:64,29/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:64,31/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:64,33/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:64,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:64,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:64,0/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.13 dB
+e:65,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,6/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:65,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,22/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:65,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,34/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:65,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:65,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.20 dB
+e:66,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,9/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:66,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,19/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:66,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,23/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:66,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,31/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:66,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:66,37/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:66,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.22 dB
+e:67,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,4/39 loss: 0.003 loss_reg: 0.0002019-06-12 13:28:35.915473: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 743 of 4992
+2019-06-12 13:28:45.921074: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1523 of 4992
+2019-06-12 13:28:55.917786: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2287 of 4992
+2019-06-12 13:29:06.306062: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:29:15.915547: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3838 of 4992
+2019-06-12 13:29:25.958943: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:29:31.022428: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:29:46.608388: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 744 of 4992
+2019-06-12 13:29:56.619289: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1523 of 4992
+2019-06-12 13:30:06.608970: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2280 of 4992
+2019-06-12 13:30:16.610303: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3055 of 4992
+2019-06-12 13:30:26.603478: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3813 of 4992
+2019-06-12 13:30:36.934657: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:30:41.965747: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:30:57.454014: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 737 of 4992
+2019-06-12 13:31:07.449696: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1514 of 4992
+2019-06-12 13:31:17.458839: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2269 of 4992
+2019-06-12 13:31:27.449812: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3048 of 4992
+2019-06-12 13:31:37.466904: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3816 of 4992
+2019-06-12 13:31:47.870773: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4566 of 4992
+2019-06-12 13:31:52.908720: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:32:08.537476: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 727 of 4992
+2019-06-12 13:32:18.526604: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1506 of 4992
+2019-06-12 13:32:28.529954: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2245 of 4992
+2019-06-12 13:32:38.533587: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3016 of 4992
+2019-06-12 13:32:48.534593: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3752 of 4992
+2019-06-12 13:32:58.537906: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4519 of 4992
+2019-06-12 13:33:04.681946: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:33:20.159694: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 722 of 4992
+2019-06-12 13:33:30.169553: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1504 of 4992
+2019-06-12 13:33:40.154337: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2239 of 4992
+2019-06-12 13:33:50.161420: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3011 of 4992
+2019-06-12 13:34:00.154263: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3739 of 4992
+2019-06-12 13:34:10.150145: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4512 of 4992
+2019-06-12 13:34:16.316392: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:34:31.924030: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 727 of 4992
+2019-06-12 13:34:41.921630: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1503 of 4992
+2019-06-12 13:34:51.923545: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2227 of 4992
+2019-06-12 13:35:01.923636: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3003 of 4992
+2019-06-12 13:35:11.912983: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3724 of 4992
+2019-06-12 13:35:21.916358: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4494 of 4992
+2019-06-12 13:35:28.544175: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:35:44.005508: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 721 of 4992
+2019-06-12 13:35:54.003955: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1501 of 4992
+2019-06-12 13:36:04.003907: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2230 of 4992
+2019-06-12 13:36:13.999366: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3011 of 4992
+2019-06-12 13:36:23.999853: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3746 of 4992
+2019-06-12 13:36:34.007136: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4515 of 4992
+2019-06-12 13:36:40.254522: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:36:55.829442: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 738 of 4992
+2019-06-12 13:37:05.825617: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1513 of 4992
+2019-06-12 13:37:15.827376: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2252 of 4992
+2019-06-12 13:37:25.823920: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3018 of 4992
+2019-06-12 13:37:35.824203: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3763 of 4992
+2019-06-12 13:37:45.825461: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4528 of 4992
+2019-06-12 13:37:51.850499: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+ lr: 0.0000
+e:67,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,10/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:67,12/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:67,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,24/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:67,26/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:67,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:67,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.24 dB
+e:68,1/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:68,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,7/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:68,9/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:68,11/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:68,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,27/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:68,29/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:68,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,33/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:68,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:68,37/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:68,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.25 dB
+e:69,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:69,4/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:69,6/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:69,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:69,10/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:69,12/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:69,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:69,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:69,18/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:69,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:69,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:69,24/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:69,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:69,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:69,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:69,32/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:69,34/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:69,36/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:69,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.28 dB
+e:70,1/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:70,3/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:70,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,11/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:70,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,25/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:70,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,33/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:70,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:70,37/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:70,0/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.32 dB
+e:71,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,10/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:71,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,20/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:71,22/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:71,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,26/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:71,28/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:71,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,32/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:71,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:71,36/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:71,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.36 dB
+e:72,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,21/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:72,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,25/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:72,27/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:72,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:72,0/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.39 dB
+e:73,2/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:73,4/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,16/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:73,18/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,20/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:73,22/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:73,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,26/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:73,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,32/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:73,34/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:73,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.40 dB
+e:74,1/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:74,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:74,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:74,7/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:74,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:74,11/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:74,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:74,15/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:74,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:74,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:74,21/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:74,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:74,25/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:74,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:74,29/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:74,31/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:74,33/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:74,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:74,37/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:74,0/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.43 dB
+e:75,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,4/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:75,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,8/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,10/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:75,12/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:75,14/39 loss: 0.003 2019-06-12 13:38:07.319465: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 732 of 4992
+2019-06-12 13:38:17.333446: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1504 of 4992
+2019-06-12 13:38:27.329508: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2229 of 4992
+2019-06-12 13:38:37.327334: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3004 of 4992
+2019-06-12 13:38:47.324323: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3723 of 4992
+2019-06-12 13:38:57.327494: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4498 of 4992
+2019-06-12 13:39:03.853383: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:39:19.432736: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 753 of 4992
+2019-06-12 13:39:29.433950: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1532 of 4992
+2019-06-12 13:39:39.445308: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2297 of 4992
+2019-06-12 13:39:49.705683: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:39:59.435551: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3848 of 4992
+2019-06-12 13:40:09.433531: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4587 of 4992
+2019-06-12 13:40:14.187357: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:40:29.659229: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 721 of 4992
+2019-06-12 13:40:39.654881: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1505 of 4992
+2019-06-12 13:40:49.657427: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2238 of 4992
+2019-06-12 13:40:59.667333: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3013 of 4992
+2019-06-12 13:41:09.649575: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3751 of 4992
+2019-06-12 13:41:19.654588: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4518 of 4992
+2019-06-12 13:41:25.853062: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:41:41.439373: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 745 of 4992
+2019-06-12 13:41:51.443409: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1532 of 4992
+2019-06-12 13:42:01.432107: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2298 of 4992
+2019-06-12 13:42:11.747141: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3066 of 4992
+2019-06-12 13:42:21.432194: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3840 of 4992
+2019-06-12 13:42:31.438863: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4580 of 4992
+2019-06-12 13:42:36.304349: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+2019-06-12 13:42:51.763165: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 736 of 4992
+2019-06-12 13:43:01.762223: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 1514 of 4992
+2019-06-12 13:43:11.766492: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 2259 of 4992
+2019-06-12 13:43:21.773856: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3025 of 4992
+2019-06-12 13:43:31.758292: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 3777 of 4992
+2019-06-12 13:43:41.758978: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:98] Filling up shuffle buffer (this may take a while): 4544 of 4992
+2019-06-12 13:43:47.544799: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:136] Shuffle buffer filled.
+loss_reg: 0.000 lr: 0.0000
+e:75,16/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,18/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:75,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,24/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,26/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,28/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,30/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,32/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,34/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:75,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:75,38/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.45 dB
+e:76,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,5/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:76,7/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,11/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,13/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,15/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,17/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:76,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,23/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,25/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,27/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:76,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,31/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:76,33/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:76,0/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.45 dB
+e:77,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:77,4/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:77,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:77,8/39 loss: 0.005 loss_reg: 0.000 lr: 0.0000
+e:77,10/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:77,12/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:77,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:77,16/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:77,18/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:77,20/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:77,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:77,24/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:77,26/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:77,28/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:77,30/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:77,32/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:77,34/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:77,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:77,38/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.47 dB
+e:78,1/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:78,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:78,5/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:78,7/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:78,9/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:78,11/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:78,13/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:78,15/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:78,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:78,19/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:78,21/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:78,23/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:78,25/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:78,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:78,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:78,31/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:78,33/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:78,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:78,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:78,0/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.51 dB
+e:79,2/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:79,4/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,6/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:79,8/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,10/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,12/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,14/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:79,16/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,18/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,20/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,22/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:79,24/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,26/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,28/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,30/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,32/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,34/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:79,36/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:79,38/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.53 dB
+e:80,1/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,3/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:80,5/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,7/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,9/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:80,11/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,13/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,15/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,17/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:80,19/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,21/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,23/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,25/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,27/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:80,29/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:80,31/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:80,33/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+e:80,35/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:80,37/39 loss: 0.004 loss_reg: 0.000 lr: 0.0000
+e:80,0/39 loss: 0.003 loss_reg: 0.000 lr: 0.0000
+average psnr is 32.56 dB
+Training is done, exit.

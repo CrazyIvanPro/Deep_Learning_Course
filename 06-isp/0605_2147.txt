@@ -1,0 +1,6 @@
+denoising.base.15.augment
+denoising.base.15.augment.patch_size-40
+denoising.base.15.augment.patch_size-40.lr_1e-3
+denoising.base.50.augment
+demosaicing_linear
+demosaicing_sRGB

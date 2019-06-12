@@ -1,0 +1,4 @@
+  File "train.py", line 53
+    boundaries = [train_set.minibatchs_per_epoch*5, train_set.minibatchs_per_epoch*40\uff0c train_set.minibatchs_per_epoch*100]
+                                                                                     ^
+SyntaxError: invalid character in identifier

@@ -1,0 +1,5 @@
+super-resolution.16.augment
+super-resolution.4.augment
+super-resolution.8.augment
+denoising.base.25.augment
+denoising.base.50.augment
