@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "train.py", line 130, in <module>
+    main()
+  File "train.py", line 40, in main
+    train_batch_gnr, train_set = get_dataset_batch(ds_name='train')
+  File "train.py", line 16, in get_dataset_batch
+    dataset = Dataset(ds_name)
+  File "/root/tf-tutorials/06-isp/demosaicing_linear.augment.test7/dataset.py", line 24, in __init__
+    train_list = [single_dataset_path + '/input_rggb/' + indx.split('\n')[0] + '.png' for single_dataset_path in dataset_path for indx in open(single_dataset_path +'/train.txt').readlines()]
+  File "/root/tf-tutorials/06-isp/demosaicing_linear.augment.test7/dataset.py", line 24, in <listcomp>
+    train_list = [single_dataset_path + '/input_rggb/' + indx.split('\n')[0] + '.png' for single_dataset_path in dataset_path for indx in open(single_dataset_path +'/train.txt').readlines()]
+FileNotFoundError: [Errno 2] No such file or directory: '../../dataset/MSR-Demosaicing/Dataset_LINEAR_without_noise/bayer_panasonic/train.txt'
