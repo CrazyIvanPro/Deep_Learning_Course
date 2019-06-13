@@ -1,0 +1,2 @@
+super-resolution.set5.3.augment.test3
+demosaicing_sRGB.augment.kernel7

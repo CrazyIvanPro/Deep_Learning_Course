@@ -8,9 +8,9 @@ super-resolution.3.augment.test7
 demosaicing_sRGB.test1
 demosaicing_sRGB.test2
 demosaicing_sRGB.test3
-demosaicing_sRGB.test4
-demosaicing_sRGB.test5
-demosaicing_sRGB.test6
-demosaicing_linear.test1
-demosaicing_linear.test2
-demosaicing_linear.test3
+demosaicing_sRGB.test4 (ABORTED)
+demosaicing_sRGB.test5 (ABORTED)
+demosaicing_sRGB.test6 (ABORTED)
+demosaicing_linear.test1 (ABORTED)
+demosaicing_linear.test2 (ABORTED)
+demosaicing_linear.test3 (ABORTED)
